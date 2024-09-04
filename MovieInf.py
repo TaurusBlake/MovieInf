@@ -16,21 +16,29 @@ driver.get(url)
 # # page_source取得網頁原始碼
 # print(driver.page_source)
 try:
-    # tag = driver.find_element(By.CLASS_NAME,"indexNews")
-    # tags = tag.find_elements(By.TAG_NAME,"li")
-    # for inf in tags:
-    #     print(inf.text)
-    # 使用 XPath 定位 a 標籤並提取連結
-    amount = driver.find_elements(By.CLASS_NAME, "infoArea")
+    print("網頁讀取成功")
+
+    # 抓取頁數，找到pagebar中的所有li
+    page = driver.find_element(By.CLASS_NAME, "pagebar")
+    page_amount = page.find_elements(By.TAG_NAME, "li")
+    
     links = []
-    for i in range(len(amount)):
-        element = driver.find_element(By.XPATH, "/html/body/article/ul/li[%i]/figure/a" %(i+1))
-        link = element.get_attribute("href")
-        links.append(link)
-    print(len(links))  # 印出提取到的連結
+    # 利用迴圈抓取連結，並丟入links空陣列
+    for pages in range(len(page_amount)-2):
+        print(pages)
+        # 使用 XPath 定位 a 標籤並提取連結
+        # 先抓取確定不會超過數量的位置，這裡選擇infArea，以便確認總數
+        movie_amount = driver.find_elements(By.CLASS_NAME, "infoArea")  
+        for movies in range(len(movie_amount)):
+            element = driver.find_element(By.XPATH, "/html/body/article/ul/li[%d]/figure/a" %(movies+1))
+            link = element.get_attribute("href")
+            links.append(link)
+        if pages+2 < len(page_amount)-1:
+            driver.get(url+"?p=%d" %(pages+2))
+        time.sleep(5)
+    # print(len(links))
 
 
 except Exception as e:
     print("連線失敗",e)
-time.sleep(5)
 driver.quit()
