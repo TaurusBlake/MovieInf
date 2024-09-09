@@ -74,7 +74,6 @@ try:
             driver.implicitly_wait(5)
         
         
-        
     except Exception as e:
         print("即將上映頁面讀取失敗", e)
     
