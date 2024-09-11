@@ -6,8 +6,9 @@ from selenium.webdriver.common.by import By
 import pandas as pd
 import MovieInf_BS
 import os
+import csv_mysql
 
-#建立movieInf_BS物件，提取links使用
+
 links = MovieInf_BS.movie_list()
 # link_min = links[:3]#先抓取3筆測試
 # 創建 Chrome 瀏覽器選項，不開啟畫面執行爬蟲
@@ -82,6 +83,8 @@ for link in links:
             "片長":movie_time,"劇情介紹":story,"電影連結":link}
     
     total_inf.append(info)
+    csv_mysql.mysql(j, title_chi, title_eng, rating_text, date, movieInf_list[1],
+                    movieInf_list[3], movieInf_list[5], movie_time, story, link)
     j+=1
     # print(info)
 movies = pd.DataFrame(total_inf)#將list轉成dataframe
