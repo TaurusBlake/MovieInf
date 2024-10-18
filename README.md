@@ -1,16 +1,18 @@
 ># 前言
->>這是一個利用網路爬蟲，爬取威秀網站資訊的程式，    
+>>這是一個利用網路爬蟲，爬取威秀網站資訊的程式，
+>>並將資料存入資料庫中，在使用Tkinter設計介面來提取並顯示資料，  
 >>未來可能會再添加其他影城的資訊，  
 >>觀迎大家來跟我交流，並給予我指教。  
 >>我所有的程式碼與物件都僅作為學習使用，請不要用於營利。  
 >>如果有侵犯到版權，請隨時通知我移除。  
 >>謝謝你們 ^__^    
->>This is a program that uses a web crawler to crawl information from the vieshow website.
->>In the future, information about other movie theaters may be added.
->>Everyone is welcome to communicate with me and give me advice.
->>All my codes and objects are only used for learning, please do not use them for profit.
->>If there is any copyright infringement, please notify me at any time to remove it.
->>Thank you ^__^
+>>This is a program that uses a web crawler to crawl information from the vieshow website.  
+>>Store the data in the database and use the Tkinter design interface to extract and display the data.  
+>>In the future, information about other movie theaters may be added.  
+>>Everyone is welcome to communicate with me and give me advice.  
+>>All my codes and objects are only used for learning, please do not use them for profit.  
+>>If there is any copyright infringement, please notify me at any time to remove it.  
+>>Thank you ^__^  
 ># 程式介面
 >><img src="https://github.com/TaurusBlake/MovieInf/blob/main/View/mov0.png" alt="Editor" width="300">
 >><img src="https://github.com/TaurusBlake/MovieInf/blob/main/View/mov1.png" alt="Editor" width="300">
