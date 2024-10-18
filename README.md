@@ -11,7 +11,7 @@
 >>All my codes and objects are only used for learning, please do not use them for profit.
 >>If there is any copyright infringement, please notify me at any time to remove it.
 >>Thank you ^__^
-># 遊戲畫面
+># 程式介面
 >><img src="https://github.com/TaurusBlake/MovieInf/blob/main/View/mov0.png" alt="Editor" width="300">
 >><img src="https://github.com/TaurusBlake/MovieInf/blob/main/View/mov1.png" alt="Editor" width="300">
 >><img src="https://github.com/TaurusBlake/MovieInf/blob/main/View/mov2.png" alt="Editor" width="300">  
