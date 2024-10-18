@@ -5,7 +5,7 @@
 >>我所有的程式碼與物件都僅作為學習使用，請不要用於營利。  
 >>如果有侵犯到版權，請隨時通知我移除。  
 >>謝謝你們 ^__^    
->>This is a program that uses a web crawler to crawl information from the Village Roadshow website.
+>>This is a program that uses a web crawler to crawl information from the vieshow website.
 >>In the future, information about other movie theaters may be added.
 >>Everyone is welcome to communicate with me and give me advice.
 >>All my codes and objects are only used for learning, please do not use them for profit.
